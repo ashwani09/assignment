@@ -1922,12 +1922,12 @@ output {
 }
 
 .form-control {
-  display: block;
-  width: 100%;
+  display: inline-table;
+  width: 50px;
   height: 34px;
   padding: 6px 12px;
   font-size: 14px;
-  line-height: 1.428571429;
+  /*line-height: 1.428571429;*/
   color: #555555;
   vertical-align: middle;
   background-color: #ffffff;

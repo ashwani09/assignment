@@ -6,7 +6,7 @@
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap-responsive.css" rel="stylesheet">
-        <link href="styles/create_employee.css" rel="stylesheet">
+        <link href="styles/crm.css" rel="stylesheet">
         
         
     </head>
@@ -31,23 +31,33 @@
 
                 <ul class="nav navbar-nav navbar-right">
 
-                    <li><a href="#">Home</a></li>
-                    <li class="active"> <a href=#>Employee Registration</a></li>
-                    <li class="dropdown">
-                        <a href="#" >User Registration</a>
-                        
-                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"> <a href=#>Registration</a></li>
+                    
                     <li><a href="#">About</a></li>
                     <li> <a href="#contact" data-toggle="modal">Contact us</a></li>
 
                 </ul>
             </div>
         </div>
-    
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <ul class="nav navbar-nav navbar-left">
+
+                    
+                    <li class="active"> <a href=#>Employee Registration</a></li>
+                    
+                    <li><a href="user_registration2.html">User Registration</a></li>
+                    
+
+                </ul>
+            </div>
+            
+        </div>
+        
         
         <div class="container">
-            <div class="row">
-                <div class="span8">
+            
                     <form class="form-horizontal" id="registerHere" method='post' action=''>
                         <fieldset>
 
@@ -55,10 +65,12 @@
                         </fieldset>
                         <div class="inline form-group left">
                             <ul>
-                                <li><label class="control-label">Sales Code:</label> <input class="form-control" type="text" name="sales_code" placeholder="Sales Code" 
+                                <li><label>Sales Code:</label> <input class="form-control" type="text" name="sales_code"
+                                                                                            placeholder="Sales Code" 
                                                                       maxlength="4"required /></li>
                                 <li><label>Title: </label>
                                     <select>
+                                        <option>--Title</option>
                                         <option value="SV">VP</option>
                                         <option value="SSV">GM</option>
                                         <option value="AM">AM</option>
@@ -72,6 +84,7 @@
                                                                       required /></li>
                                 <li><label>Department: </label>
                                     <select>
+                                        <option>--Department</option>
                                         <option value="Sales">Sales</option>
                                         <option value="Marketing">Marketing</option>
                                         <option value="Finance">Finance</option>
@@ -82,6 +95,7 @@
                                 <li>
                                     <label>Reporting To: </label>
                                     <select>
+                                        <option>--Reporting To</option>
                                         <option value="VP">VP</option>
                                         <option value="MD">MD</option>
                                         <option value="GM">GM</option>
@@ -95,6 +109,7 @@
                                                                       maxlength="10"/></li>
                                    <li><label>IM Type: </label>
                                         <select>
+                                            <option value="">--IM Type</option>
                                             <option value=""></option>
                                             <option value=""></option>
                                             <option value=""></option>
@@ -117,6 +132,7 @@
                             <ul>
                                 <li><label>Employee Status:</label>
                                     <select>
+                                        <option value="">--Employee Status</option>
                                         <option value="A">A</option>
                                         <option value="S">S</option>
                                         <option value="D">D</option>
@@ -125,12 +141,13 @@
                                 </li>
                                 
                                 <li>
-                                    <label for = "message" >Message:</label>
-                                    <textarea name = "message" cols = "60" rows = "10"  class="form-control"></textarea>
+                                    <label for = "address" >Address:</label>
+                                    <textarea name = "message" cols = "45" rows = "5"></textarea>
                                 </li>
                                 
                                 <li><label>City: </label>
                                     <select>
+                                        <option value="">--City</option>
                                         <option value="Bangalore">Bangalore</option>
                                         <option value="New Delhi">New Delhi</option>
                                         <option value="Pune">Pune</option>
@@ -140,6 +157,7 @@
                                 
                                 <li><label>State: </label>
                                     <select>
+                                        <option value="">--State</option>
                                         <option value="Karnataka">Karnataka</option>
                                         <option value="New Delhi">New Delhi</option>
                                         <option value="Maharashtra">Maharashtra</option>
@@ -148,12 +166,8 @@
                                 </li>
                                 
                                 <li><label>Pin Code: </label>
-                                    <select>
-                                        <option value="540056">540056</option>
-                                        <option value="200006">200006</option>
-                                        <option value="132564">132564</option>
-                                        
-                                    </select>
+                                    <input class="form-control" type="text" name="pin_code" placeholder="Pin Code"
+                                                                      maxlength="6"/>
                                 </li>
                                 
                                 
@@ -176,8 +190,7 @@
                     </form>
  
                 </div>
-            </div>
-        </div>
+        
         
     </body>
     

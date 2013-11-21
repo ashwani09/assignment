@@ -1,0 +1,42 @@
+$main: #pink;
+.button {
+color: $main;
+}
+
+.content {
+border: 1px solid #ccc;
+padding: 30px;
+h2 
+    {
+ font-size: 30px;
+ margin: 30px 0;
+ color:blue;
+    }
+ p 
+    {
+  font-size: 30px;
+  margin: 30px 0;
+  color:pink;
+    }
+}
+
+  .right {
+    width:40%;
+    display:inline-block;
+    float:right;
+}
+
+.left {
+    width:60%
+    display:inline-block;
+    float:left;
+}
+
+body {
+    align-content:center;
+    
+}
+
+
+
+
