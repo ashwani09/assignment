@@ -1,0 +1,55 @@
+
+
+ul {
+	list-style: none;
+	
+}
+
+.inline {
+    display: inline-block;
+    width: 45%;
+    height: 550px;
+    
+    
+}
+
+.block {
+    width: 100%;
+    clear: both;
+    margin-left: 450px;
+    margin-right: 500px; 
+    
+}
+
+
+select {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 150px;
+    padding: 5px;
+    width: 150px;
+    height: 30px;
+    float: right;
+    
+}
+
+.right {
+    float: right;   
+}
+
+.left {
+    float: left;   
+}
+
+label {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+
+button{
+    
+    float: left;
+    margin-left: 30px;
+}
+
