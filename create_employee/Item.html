@@ -41,8 +41,8 @@
                 <ul class="nav nav-tabs">
 
                     
-                    <li class="active"> <a href="inventory.html">Warehouse</a></li>
-                    <li><a href="item.html">Item</a></li>
+                    <li > <a href="inventory.html">Warehouse</a></li>
+                    <li class="active"><a href="item.html">Item</a></li>
                     <li><a href="price.html">Price</a></li>
                     <li><a href="inventory_warehouse.html">Item Inventory</a></li>
                     
@@ -57,56 +57,16 @@
             <form class="form-horizontal" id="registerHere" method='post' action=''>
                         <fieldset>
 
-                            <legend>Warehouse Definition</legend>
+                            <legend>Item Definition</legend>
                         </fieldset>
                         <div class="inline2 form-group left">
+                           
                             <ul>
-                                <li><label>Warehouse Code:</label> <input class="form-control" type="text" name="warehouse_code"
-                                                                                            placeholder="Sales Code" 
-                                                                      maxlength="4"required /></li>
-                                <li><label>Warehouse Name:</label> <input class="form-control" type="text" name="warehouse_name"
-                                                                                            placeholder="Sales Code" 
-                                                                     required /></li>
-                                
-                                <li><label>Warehouse Type: </label>
-                                    <select>
-                                        <option>--Select </option>
-                                        <option value="company">Company</option>
-                                        <option value="distributor">Distributor</option>
-                                        <option value="retailer">Retailer</option>
-                                        
-                                    </select>
-                                </li>
-                                
+                                <li><label>Item code:</label> <input class="form-control" type="text" name="address1" placeholder="Item code" 
+                                                                     maxlength="30" required /></li>
+                                <li><label>Item Name:</label> <input class="form-control" type="text" name="address2" placeholder="Item name" 
+                                                                     maxlength="30" required /></li>
                                 <li><label>Sales Area: </label>
-                                    <select>
-                                        <option>--Sales Area</option>
-                                        <option value=""></option>
-                                        <option value=""></option>
-                                        <option value=""></option>
-                                        
-                                    </select>
-                                </li>
-                                
-                                <li><label>Sales Code: </label>
-                                    <select>
-                                        <option>--Sales Area</option>
-                                        <option value=""></option>
-                                        <option value=""></option>
-                                        <option value=""></option>
-                                        
-                                    </select>
-                                </li>
-                            </ul>            
-                        </div>
-                
-                <div class="inline2 form-group right">
-                            <ul>
-                                <li><label>Address1:</label> <input class="form-control" type="text" name="address1" placeholder="Address1" 
-                                                                     maxlength="30" required /></li>
-                                <li><label>Address2:</label> <input class="form-control" type="text" name="address2" placeholder="Address2" 
-                                                                     maxlength="30" required /></li>
-                                <li><label>City: </label>
                                     <select>
                                         <option value="">--City</option>
                                         <option value="Bangalore">Bangalore</option>
@@ -116,7 +76,7 @@
                                     </select>
                                 </li>
                                 
-                                <li><label>State: </label>
+                                <li><label>Sales Subarea: </label>
                                     <select>
                                         <option value="">--State</option>
                                         <option value="Karnataka">Karnataka</option>
@@ -126,23 +86,22 @@
                                     </select>
                                 </li>
                                 
-                                <li><label>Pin Code: </label>
-                                    <input class="form-control" type="text" name="pin_code" placeholder="Pin Code"
-                                                                      maxlength="6"/>
-                                </li>
                                 
-                                <li><label>Latitude: </label>
-                                    <input class="form-control" type="text" name="lat" placeholder="Latitude"/>
+                                <li><label>Price: </label>
+                                    <input class="form-control" type="text" name="lat" placeholder="Price"/>
                                                                       
                                 </li>
                                 
-                                <li><label>Longitude: </label>
-                                    <input class="form-control" type="text" name="long" placeholder="Longitude"/>
+                                <li><label>Tax rate: </label>
+                                    <input class="form-control" type="text" name="long" placeholder="Tax rate"/>
                                 </li>
 
                                     
                             </ul>
+                            
                         </div>
+                
+               
                         <div>
                                 <ul class="block">
                                     <li><button class="btn btn-primary" type="submit" name="submit">Submit</button></li>

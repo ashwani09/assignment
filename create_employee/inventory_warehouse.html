@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Store</title>
+        <meta name="viewport" content="width=device-width",initial-scale=1.0>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="styles/crm.css" rel="stylesheet">
+        
+        
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-static-top">
+
+            <div class="container">
+
+
+
+            </div>
+
+            <a href="index.html" class="navbar-brand">Converbiz CRM</a>
+            
+
+            
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li > <a href="create_employee.html">Registration</a></li>
+                    
+                    <li class="active"><a href="inventory.html">Inventory</a></li>
+                    <li><a href="#">Sales</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li> <a href="#contact" data-toggle="modal">Contact us</a></li>
+
+                </ul>
+            </div>
+        
+        
+            <div class="container">
+                <ul class="nav nav-tabs">
+
+                    
+                    <li > <a href="inventory.html">Warehouse</a></li>
+                    <li><a href="item.html">Item</a></li>
+                    <li><a href="price.html">Price</a></li>
+                    <li class="active"><a href="inventory_warehouse.html">Item Inventory</a></li>
+                    
+                    
+
+                </ul>
+            </div>
+            
+        
+        
+        <div class="container">
+            <form class="form-horizontal" id="registerHere" method='post' action=''>
+                        <fieldset>
+
+                            <legend>Warehouse Definition</legend>
+                        </fieldset>
+                        <div class="inline2 form-group left">
+                           
+                            <ul>
+                                <li><label>Item code:</label> <input class="form-control" type="text" name="address1" placeholder="Item code" 
+                                                                     maxlength="30" required /></li>
+                                <li><label>Status:</label> 
+                                    <select>
+                                        <option>--Select</option>
+                                        <option>Use</option>
+                                        <option>Not in Use</option>
+                                    
+                                    </select></li>
+                                
+                                
+                                
+                            </ul>
+                          </div>
+                
+                <div class="inline2 form-group right">
+                    <ul>
+                        <li><label>W_D_R_code: </label>
+                                    <input class="form-control" type="text" name="lat" placeholder="wdr code"/>
+                        </li>
+                        
+                        <li><label>Item Description: </label>
+                                    <input class="form-control" type="text" name="long" placeholder="Item description"/>
+                        </li>
+                    
+                    </ul>
+                </div>
+                        <div>
+                                <ul class="block">
+                                    <li><button class="btn btn-primary" type="submit" name="submit">Submit</button></li>
+                                    <li><button class="btn btn-danger" type="reset" name="reset">Cancel</button></li>
+                                </ul>
+                            
+                            </div>
+                       
+                        
+                </form>
+            
+            <div class="container">
+                <table class="table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Item Code</th>
+                            <th>Item Name</th>
+                            <th>Item Category</th>
+                            <th>Status</th>
+                            <th>W_D_R</th>
+                            <th>W_D_R_Code</th>
+                            <th>Quantity</th>
+                            <th>ROL Level</th>
+                            <th>Verified</th>
+                            
+                        </tr>
+                        
+                    
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            
+                        </tr>
+                        <tr>
+                            
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                
+                </table>
+            
+            
+            </div>
+        
+        </div>
+        
+    </body>
+</html>
